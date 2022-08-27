@@ -1,3 +1,114 @@
+/*Global*/
+body {
+  margin: 0;
+}
 
+h1 {
+  font-size: 80px;
+  color: rgb(135, 108, 247);
+  font-family: "Anek Telugu", sans-serif;
+  margin-top: 20px;
+  word-spacing: 15px;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+h2 {
+  color: rgb(135, 108, 247);
+  font-style: italic;
+  font-size: 48px;
+  margin-bottom: 30px;
+  word-spacing: 15px;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Anek Telugu", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Anek Telugu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h5 {
+  font-family: "Anek Telugu", sans-serif;
+  font-size: 16px;
+  color: rgb(105, 104, 104);
+}
+
+.Links {
+  text-decoration: none;
+  color: black;
+}
+
+/*Header & Navbar*/
+.splash {
+  background-image: url("../images/pexels-elvis-2528118.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.splash .container-fluid {
+  padding: 0 15%;
+}
+.splash .container-fluid .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.splash .container-fluid .navigation .nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+}
+.splash .container-fluid .navigation .nav-list .nav-brand {
+  font-family: "Pattaya", sans-serif;
+  color: goldenrod;
+  font-size: 30px;
+  font-style: italic;
+}
+.splash .container-fluid .navigation .nav-list-2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px;
+}
+.splash .container-fluid .navigation .nav-list-2 .nav-link {
+  font-weight: 600;
+  font-family: "Anek Telugu", sans-serif;
+  color: rgb(135, 108, 247);
+  padding: 8px;
+  text-decoration: none;
+  transition: all 1s;
+}
+.splash .container-fluid .navigation .nav-list-2 .nav-link:hover {
+  color: goldenrod;
+}
+
+.splash-inner {
+  margin-top: 25vh;
+  text-align: center;
+}
+.splash-inner .btn {
+  color: white;
+  font-weight: 600;
+  padding: 20px 40px;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #ffc107;
+  border-radius: 5%;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.splash-inner .btn:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxTQUFBO0FBVUE7RUFDSSxTQUFBO0FDUko7O0FEV0E7RUFDSSxlQUFBO0VBQ0EseUJBZGdCO0VBZWhCLHNDQWhCVTtFQWlCVixnQkFBQTtFQUNBLGtCQUFBO0FDUko7O0FEV0E7RUFDSSx5QkFyQmdCO0VBc0JoQixrQkFBQTtFQUNBLGVBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0FDUko7O0FEV0E7RUFDSSxrQkFBQTtFQUNBLHNDQS9CVTtFQWdDVixlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxTQUFBO0FDUko7O0FEV0E7RUFDSSxzQ0F0Q1U7RUF1Q1YsZUFBQTtFQUNBLGdCQUFBO0VBQ0EsU0FBQTtBQ1JKOztBRFdBO0VBQ0ksc0NBN0NVO0VBOENWLGVBQUE7RUFDQSx5QkE1Q1c7QUNvQ2Y7O0FEV0E7RUFDSSxxQkFBQTtFQUNBLFlBbERVO0FDMENkOztBRFdBLGtCQUFBO0FBQ0E7RUFDSSwyREFBQTtFQUNBLGFBQUE7RUFDQSwyQkFBQTtFQUNBLHNCQUFBO0VBQ0EsNEJBQUE7QUNSSjtBRFVJO0VBQ0ksY0FBQTtBQ1JSO0FEVVE7RUFDSSxhQUFBO0VBQ0EsOEJBQUE7RUFDQSxtQkFBQTtBQ1JaO0FEVVk7RUFDSSxxQkFBQTtFQUNBLFNBQUE7RUFDQSxhQUFBO0FDUmhCO0FEVWdCO0VBQ0ksa0NBekVQO0VBMEVPLGdCQXpFRDtFQTBFQyxlQUFBO0VBQ0Esa0JBQUE7QUNScEI7QURZWTtFQUNJLGFBQUE7RUFDQSx5QkFBQTtFQUNBLG1CQUFBO0VBQ0EscUJBQUE7RUFDQSxhQUFBO0FDVmhCO0FEWWdCO0VBQ0ksZ0JBQUE7RUFDQSxzQ0E3Rk47RUE4Rk0seUJBN0ZBO0VBOEZBLFlBQUE7RUFDQSxxQkFBQTtFQUNBLGtCQUFBO0FDVnBCO0FEYWdCO0VBQ0ksZ0JBaEdEO0FDcUZuQjs7QURrQkE7RUFDSSxnQkFBQTtFQUNBLGtCQUFBO0FDZko7QURpQkk7RUFDSSxZQTNHWTtFQTRHWixnQkFBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxxQkFBQTtFQUNBLHlCQS9HTztFQWdIUCxpQkFBQTtFQUNBLG1CQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0FDZlI7QURrQkk7RUFDSSxZQTVITTtBQzRHZCIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

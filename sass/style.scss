@@ -1,0 +1,130 @@
+/*Global*/
+$font-header: "Anek Telugu", sans-serif;
+$font-header-color: rgb(135, 108, 247);
+$Links-color: black;
+$footer-color: rgb(105, 104, 104);
+$font-brand: "Pattaya", sans-serif;
+$font-brand-color: goldenrod;
+$font-button-color: white;
+$button-color: #ffc107;
+
+body {
+    margin: 0;
+}
+  
+h1 {
+    font-size: 80px;
+    color: $font-header-color;
+    font-family: $font-header;
+    margin-top: 20px;
+    word-spacing: 15px;
+}
+  
+h2 {
+    color: $font-header-color;
+    font-style: italic;
+    font-size: 48px;
+    margin-bottom: 30px;
+    word-spacing: 15px;
+}
+  
+h3 {
+    text-align: center;
+    font-family: $font-header;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+  
+h4 {
+    font-family: $font-header;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+  
+h5 {
+    font-family: $font-header;
+    font-size: 16px;
+    color: $footer-color;
+}
+  
+.Links {
+    text-decoration: none;
+    color: $Links-color;
+}
+  
+/*Header & Navbar*/
+.splash {
+    background-image: url("../images/pexels-elvis-2528118.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .container-fluid {
+        padding: 0 15%;
+  
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+            .nav-list {
+                list-style-type: none;
+                margin: 0;
+                padding: 20px;
+            
+                .nav-brand {
+                    font-family: $font-brand;
+                    color: $font-brand-color;
+                    font-size: 30px;
+                    font-style: italic;
+                }
+            }
+            
+            .nav-list-2 {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                list-style-type: none;
+                padding: 10px;
+            
+                .nav-link {
+                    font-weight: 600;
+                    font-family: $font-header;
+                    color: $font-header-color;
+                    padding: 8px;
+                    text-decoration: none;
+                    transition: all 1s;
+                }
+
+                .nav-link:hover {
+                    color: $font-brand-color;
+                }
+            }
+        }
+    }
+}
+
+.splash-inner {
+    margin-top: 25vh;
+    text-align: center;
+
+    .btn {
+        color: $font-button-color;
+        font-weight: 600;
+        padding: 20px 40px;
+        margin-top: 20px;
+        text-decoration: none;
+        background-color: $button-color;
+        border-radius: 5%;
+        letter-spacing: 3px;
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+    .btn:hover {
+        color: $Links-color;
+    }
+}
