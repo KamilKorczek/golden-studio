@@ -2,7 +2,7 @@
 $font-header: "Anek Telugu", sans-serif;
 $font-header-color: rgb(135, 108, 247);
 $Links-color: black;
-$footer-color: rgb(105, 104, 104);
+$text-color: rgb(105, 104, 104);
 $font-brand: "Pattaya", sans-serif;
 $font-brand-color: goldenrod;
 $font-button-color: white;
@@ -46,7 +46,7 @@ h4 {
 h5 {
     font-family: $font-header;
     font-size: 16px;
-    color: $footer-color;
+    color: $text-color;
 }
   
 .Links {
