@@ -211,3 +211,55 @@ h5 {
         }
     }
 }
+
+/*Footer*/
+footer {
+    margin: 0;
+
+    .container-fluid {
+        padding: 3vh 20vh;
+    
+        .social-media-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+            .copyright {
+                margin: 0;
+                list-style-type: none;
+            }
+
+            .social-media {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                flex: 50% 0;
+                align-items: center;
+                
+                .social {
+                    font-size: 0;
+                    padding: 0 10px;
+                
+                    .fab, .fa-brands {
+                        font-size: 20px;
+                        background: $Links-color;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        color: $font-button-color;
+                        border-radius: 50%;
+                        transition: all 1s;
+                    }
+
+                    .fab:hover, .fa-brands:hover {
+                        transform: scale(1.2);
+                        transition: all 1s;
+                    }
+                }
+            }
+        }
+    }
+}
