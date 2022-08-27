@@ -128,3 +128,41 @@ h5 {
         color: $Links-color;
     }
 }
+
+/*Services*/
+.container-fluid {
+    margin: 0;
+    padding: 10vh 20vh;
+  
+    .section-subtitle {
+        text-align: center;
+        color: $text-color;
+        font-style: italic;
+        font-size: 20px;
+    }
+  
+    .three-elements {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 60px;
+        text-align: center;
+    
+        .element {
+            padding: 35px;
+    
+            .fas {
+                border-radius: 50%;
+                border: 3px solid $button-color;
+                font-size: 40px;
+                color: $button-color;
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: $text-color;
+            }
+        }
+    }
+}
