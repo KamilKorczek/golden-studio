@@ -58,13 +58,13 @@ h5 {
 /*Header & Navbar*/
 .splash {
     background-image: url("../images/pexels-elvis-2528118.jpg");
-    height: 100vh;
+    height: 1080px;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 
     .container-fluid {
-        padding: 0 15%;
+        padding: 0 250px;
   
         .navigation {
             display: flex;
@@ -109,7 +109,7 @@ h5 {
 }
 
 .splash-inner {
-    margin-top: 25vh;
+    margin-top: 250px;
     text-align: center;
 
     .btn {
@@ -133,7 +133,7 @@ h5 {
 /*Services*/
 .container-fluid {
     margin: 0;
-    padding: 10vh 20vh;
+    padding: 100px 160px;
   
     .section-subtitle {
         text-align: center;
@@ -217,7 +217,7 @@ footer {
     margin: 0;
 
     .container-fluid {
-        padding: 3vh 20vh;
+        padding: 30px 160px;
     
         .social-media-content {
             display: flex;
@@ -301,7 +301,7 @@ footer {
     }
 
     .splash-inner {
-        margin-top: 10vh;
+        margin-top: 100px;
 
         .splash-inner .btn {
             padding: 7px 13px;
@@ -310,7 +310,7 @@ footer {
 
     /*Services*/
     .services .container-fluid {
-        padding: 10vh 5px;
+        padding: 100px 5px;
 
         .three-elements {
             padding: 60px 0;
@@ -324,7 +324,7 @@ footer {
 
     /*Our portfolio*/
     .our-portfolio .container-fluid {
-        padding: 10vh 5px;
+        padding: 100px 5px;
 
         .row {
             margin: 0;
@@ -336,7 +336,7 @@ footer {
     }
     /*Footer*/
     footer .container-fluid {
-        padding: 3vh 5px;
+        padding: 30px 5px;
 
         .social-media-content {
             flex-wrap: wrap;
@@ -352,7 +352,7 @@ footer {
 @media (min-width: 768px) and (max-width: 1200px) {
     /*Services*/
     .services .container-fluid {
-        padding: 10vh 5vh;
+        padding: 30px 160px;
     }
 
     /*Footer*/
