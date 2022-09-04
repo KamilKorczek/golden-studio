@@ -34,6 +34,7 @@ h3 {
     font-family: $font-header;
     font-size: 40px;
     font-weight: 700;
+    padding-top: 80px;
     margin: 0;
 }
   
@@ -49,7 +50,7 @@ h5 {
     font-size: 16px;
     color: $text-color;
 }
-  
+
 .Links {
     text-decoration: none;
     color: $Links-color;
@@ -62,47 +63,42 @@ h5 {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-
-    .container-fluid {
-        padding: 0 250px;
-  
-        .navigation {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+ 
+    .container .navigation {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        .nav-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 20px;
         
-            .nav-list {
-                list-style-type: none;
-                margin: 0;
-                padding: 20px;
-            
-                .nav-brand {
-                    font-family: $font-brand;
-                    color: $font-brand-color;
-                    font-size: 30px;
-                    font-style: italic;
-                }
+            .nav-brand {
+                font-family: $font-brand;
+                color: $font-brand-color;
+                font-size: 30px;
+                font-style: italic;
             }
-            
-            .nav-list-2 {
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                list-style-type: none;
-                padding: 10px;
-            
-                .nav-link {
-                    font-weight: 600;
-                    font-family: $font-header;
-                    color: $font-header-color;
-                    padding: 8px;
-                    text-decoration: none;
-                    transition: all 1s;
-                }
+        }
+        
+        .nav-list-2 {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            padding: 10px;
+        
+            .nav-link {
+                font-weight: 600;
+                font-family: $font-header;
+                color: $font-header-color;
+                padding: 8px;
+                text-decoration: none;
+                transition: all 1s;
+            }
 
-                .nav-link:hover {
-                    color: $font-brand-color;
-                }
+            .nav-link:hover {
+                color: $font-brand-color;
             }
         }
     }
@@ -131,40 +127,32 @@ h5 {
 }
 
 /*Services*/
-.container-fluid {
-    margin: 0;
-    padding: 100px 160px;
-  
-    .section-subtitle {
-        text-align: center;
-        color: $text-color;
-        font-style: italic;
-        font-size: 20px;
-    }
-  
-    .three-elements {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-around;
-        padding: 60px;
-        text-align: center;
-    
-        .element {
-            padding: 35px;
-    
-            .fas {
-                border-radius: 50%;
-                border: 3px solid $button-color;
-                font-size: 40px;
-                color: $button-color;
-                padding: 15px;
-                margin-bottom: 20px;
-            }
+.container .section-subtitle {
+    text-align: center;
+    color: $text-color;
+    font-style: italic;
+    font-size: 20px;
+}
 
-            p {
-                color: $text-color;
-            }
-        }
+.container .three-elements {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 0 100px 0;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+
+    .element .fas {
+        border-radius: 50%;
+        border: 3px solid $button-color;
+        font-size: 40px;
+        color: $button-color;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .element p {
+        color: $text-color;
     }
 }
 
@@ -180,9 +168,7 @@ h5 {
     }
 
     .row {
-        display: flex;
-        justify-content: space-between;
-        padding: 60px 0;
+        padding: 80px 0 100px 0;
         text-align: center;
     
         .portfolio {
@@ -213,52 +199,43 @@ h5 {
 }
 
 /*Footer*/
-footer {
-    margin: 0;
-
-    .container-fluid {
-        padding: 30px 160px;
+footer .social-media-content {
+    display: flex;
+    padding: 15px 0;
     
-        .social-media-content {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            
-            .copyright {
-                margin: 0;
-                list-style-type: none;
+    .copyright {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .social-media {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .social {
+            font-size: 0;
+            padding: 0 10px;
+        
+            .fab, .fa-brands {
+                font-size: 20px;
+                background: $Links-color;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: $font-button-color;
+                border-radius: 50%;
+                transition: all 1s;
             }
 
-            .social-media {
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-                display: flex;
-                justify-content: center;
-                flex: 50% 0;
-                align-items: center;
-                
-                .social {
-                    font-size: 0;
-                    padding: 0 10px;
-                
-                    .fab, .fa-brands {
-                        font-size: 20px;
-                        background: $Links-color;
-                        width: 40px;
-                        height: 40px;
-                        line-height: 40px;
-                        text-align: center;
-                        color: $font-button-color;
-                        border-radius: 50%;
-                        transition: all 1s;
-                    }
-
-                    .fab:hover, .fa-brands:hover {
-                        transform: scale(1.2);
-                        transition: all 1s;
-                    }
-                }
+            .fab:hover, .fa-brands:hover {
+                transform: scale(1.2);
+                transition: all 1s;
             }
         }
     }
@@ -279,8 +256,7 @@ footer {
     }
 
     /*Header*/
-    .splash .container-fluid {
-        padding: 0 5px;
+    .splash {
 
         .navigation {
             flex-wrap: wrap;
@@ -309,54 +285,12 @@ footer {
     }
 
     /*Services*/
-    .services .container-fluid {
-        padding: 100px 5px;
-
-        .three-elements {
-            padding: 60px 0;
-            flex-wrap: wrap;
-
-            .element {
-                padding: 5px;
-            }
-        }
-    }
-
-    /*Our portfolio*/
-    .our-portfolio .container-fluid {
-        padding: 100px 5px;
-
-        .row {
-            margin: 0;
-        
-            .card {
-                margin: 0;
-            }
-        }
-    }
-    /*Footer*/
-    footer .container-fluid {
-        padding: 30px 5px;
-
-        .social-media-content {
-            flex-wrap: wrap;
-            flex-direction: column;
-        
-            .copyright {
-                padding: 0;
-            }
-        }
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-    /*Services*/
-    .services .container-fluid {
-        padding: 30px 160px;
+    .container .three-elements {
+        flex-direction: column;
     }
 
     /*Footer*/
-    footer .copyright {
-        padding: 0;
+    .social-media-content {
+        flex-direction: column;
     }
 }
